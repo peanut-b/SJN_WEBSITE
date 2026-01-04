@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Juan Nepomuceno Parish - Malibay Pasay</title>
+    <link rel="icon" type="image/x-icon" href="Assets\Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Assets\Logo.png" alt="San Juan Nepomuceno Parish Logo" class="parish-logo">
+                San Juan Nepomuceno Parish - Malibay
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="articles.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.awitatpapuri.com/">Readings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact Us</a>
+                </li>
+                </ul>  
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero-section">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="video-background">
+            <source src="../Assets/sjn.mp4" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="../Assets/background.jpg" alt="Fallback background">
+        </video>
+        
+        <!-- Gradient Overlay -->
+        <div class="gradient-overlay"></div>
+        
+        <!-- Content Container -->
+        <div class="hero-content container text-end">
+            <h1 class="display-4 fw-bold">Mabuhay!</h1>
+            <p class="lead">Welcome to San Juan Nepomuceno Parish, a living testament to faith, resilience, and heritage. For generations, our church has been a spiritual home, witnessing prayers, celebrations, and devotion. May our bells continue to call the faithful to worship and serve as a beacon of hope in our community.</p>
+        </div>
+    </section>
+
+    <!-- Ministries & Activities Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4" style="color: var(--primary-color);">
+                    News and Events
+                </h2>
+            </div>
+        </div>
+        
+        <!-- Carousel Container -->
+        <div class="position-relative">
+            <!-- Carousel -->
+            <div id="ministriesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <!-- Slide 1 (Active) -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center g-4">
+                            <!-- Card 1 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="Assets/youth-ministry.jpg" class="card-img-top" alt="Youth Ministry" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Youth Ministry</h5>
+                                        <p class="card-text">Engaging young people in faith formation, community service, and spiritual growth activities for ages 13-25.</p>
+                                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="../Assets/Choir.jpg" class="card-img-top" alt="Parish Choir" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Parish Choir</h5>
+                                        <p class="card-text">Enhance liturgical celebrations through music. Open to all who love to sing and praise the Lord.</p>
+                                        <a href="#" class="btn btn-outline-primary">Join Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="Assets/social-action.jpg" class="card-img-top" alt="Social Action" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Social Action</h5>
+                                        <p class="card-text">Serving the community through outreach programs, feeding programs, and assistance to those in need.</p>
+                                        <a href="#" class="btn btn-outline-primary">Volunteer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4">
+                            <!-- Card 4 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="Assets/bible-study.jpg" class="card-img-top" alt="Bible Study" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Bible Study Group</h5>
+                                        <p class="card-text">Deepen your understanding of Scripture through weekly discussions and reflections.</p>
+                                        <a href="#" class="btn btn-outline-primary">Join Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 5 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="Assets/family.jpg" class="card-img-top" alt="Family Ministry" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Family Ministry</h5>
+                                        <p class="card-text">Strengthening Catholic families through retreats, seminars, and family-oriented activities.</p>
+                                        <a href="#" class="btn btn-outline-primary">Join Activities</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 6 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="Assets/lectors.jpg" class="card-img-top" alt="Lectors Ministry" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Lectors Ministry</h5>
+                                        <p class="card-text">Proclaiming the Word of God during liturgical celebrations. Training provided for new members.</p>
+                                        <a href="#" class="btn btn-outline-primary">Join Ministry</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4">
+                            <!-- Card 7 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="Assets/senior.jpg" class="card-img-top" alt="Senior Ministry" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Senior Ministry</h5>
+                                        <p class="card-text">Providing spiritual and social support for our elderly parishioners through regular gatherings.</p>
+                                        <a href="#" class="btn btn-outline-primary">Join Fellowship</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 8 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="Assets/catechism.jpg" class="card-img-top" alt="Catechism" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Catechism Program</h5>
+                                        <p class="card-text">Religious education for children and youth preparing for sacraments and faith formation.</p>
+                                        <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 9 -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="Assets/prayer.jpg" class="card-img-top" alt="Prayer Group" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">Prayer Group</h5>
+                                        <p class="card-text">Weekly prayer meetings for intercession, healing prayers, and spiritual support.</p>
+                                        <a href="#" class="btn btn-outline-primary">Join Prayer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ministriesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ministriesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators position-static mt-4">
+                    <button type="button" data-bs-target="#ministriesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#ministriesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#ministriesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parish Priests Carousel Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4" style="color: var(--primary-color);">
+                     Parish Priests
+                </h2>
+                <p class="text-center mb-5">Meet our dedicated clergy serving the San Juan Nepomuceno Parish community.</p>
+            </div>
+        </div>
+        
+        <!-- Priests Carousel -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div id="priestsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        
+                        <!-- Page 1 - First Priest -->
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <div class="card mb-3 border-0 shadow-sm" style="max-width: 800px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="position-relative h-100">
+                                                <img src="../Assets/frjohn.jpg" class="img-fluid rounded-start h-100 w-100" alt="Fr. John Martin" style="object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white" style="background: rgba(90, 14, 36, 0.8);">
+                                                    <h5 class="mb-0">Parish Priest</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-4">
+                                                <h3 class="card-title">Rev. Fr. John G. Barro</h3>
+                                                <p class="card-text text-muted mb-3"><i class="bi bi-award me-2"></i>Parish Priest & Spiritual Director</p>
+                                                <p class="card-text">Father John has been serving our parish for 8 years with dedication and compassion. He completed his theological studies at the University of Santo Tomas and was ordained in 2005. He specializes in youth ministry and family counseling.</p>
+                                                <div class="row mt-4">
+                                                    <div class="col-6">
+                                                        <p class="mb-1"><strong><i class="bi bi-calendar me-2"></i>Ordained:</strong></p>
+                                                        <p class="text-muted">June 15, 2005</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-1"><strong><i class="bi bi-building me-2"></i>Assigned:</strong></p>
+                                                        <p class="text-muted">July 2016</p>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text mt-3">
+                                                    <strong><i class="bi bi-book me-2"></i>Education:</strong> 
+                                                    <span class="text-muted">STL, University of Santo Tomas</span>
+                                                </p>
+                                                <p class="card-text">
+                                                    <strong><i class="bi bi-envelope me-2"></i>Contact:</strong> 
+                                                    <span class="text-muted">fr.john@sjnp.org</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 2 - Second Priest -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="card mb-3 border-0 shadow-sm" style="max-width: 800px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="position-relative h-100">
+                                                <img src="../Assets/frdodoy.jpg" class="img-fluid rounded-start h-100 w-100" alt="Fr. Michael Rodriguez" style="object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white" style="background: rgba(90, 14, 36, 0.8);">
+                                                    <h5 class="mb-0">Assistant Parish Priest</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-4">
+                                                <h3 class="card-title">Rev. Fr. Michael Rodriguez</h3>
+                                                <p class="card-text text-muted mb-3"><i class="bi bi-award me-2"></i>Assistant Parish Priest & Liturgical Coordinator</p>
+                                                <p class="card-text">Father Michael joined our parish in 2020. With a background in liturgical music and sacramental theology, he brings a deep sense of reverence to our celebrations. He oversees all liturgical activities and sacramental preparations.</p>
+                                                <div class="row mt-4">
+                                                    <div class="col-6">
+                                                        <p class="mb-1"><strong><i class="bi bi-calendar me-2"></i>Ordained:</strong></p>
+                                                        <p class="text-muted">March 20, 2012</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-1"><strong><i class="bi bi-building me-2"></i>Assigned:</strong></p>
+                                                        <p class="text-muted">January 2020</p>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text mt-3">
+                                                    <strong><i class="bi bi-book me-2"></i>Education:</strong> 
+                                                    <span class="text-muted">MA in Liturgical Studies, San Beda College</span>
+                                                </p>
+                                                <p class="card-text">
+                                                    <strong><i class="bi bi-envelope me-2"></i>Contact:</strong> 
+                                                    <span class="text-muted">fr.michael@sjnp.org</span>
+                                                </p>
+                                                <p class="card-text">
+                                                    <strong><i class="bi bi-music-note me-2"></i>Specialty:</strong> 
+                                                    <span class="text-muted">Liturgical Music, Sacramental Theology</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 3 - Third Priest -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="card mb-3 border-0 shadow-sm" style="max-width: 800px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="position-relative h-100">
+                                                <img src="../Assets/frejay.jpg" class="img-fluid rounded-start h-100 w-100" alt="Fr. Anthony Santos" style="object-fit: cover;">
+                                                <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white" style="background: rgba(90, 14, 36, 0.8);">
+                                                    <h5 class="mb-0">Parish Vicar</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body p-4">
+                                                <h3 class="card-title">Rev. Fr. Anthony Santos</h3>
+                                                <p class="card-text text-muted mb-3"><i class="bi bi-award me-2"></i>Parish Vicar & Social Action Director</p>
+                                                <p class="card-text">Father Anthony specializes in social justice and community outreach. He leads our parish's social action programs and coordinates with various community organizations. He has served in missionary work for 5 years before joining our parish.</p>
+                                                <div class="row mt-4">
+                                                    <div class="col-6">
+                                                        <p class="mb-1"><strong><i class="bi bi-calendar me-2"></i>Ordained:</strong></p>
+                                                        <p class="text-muted">December 8, 2010</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-1"><strong><i class="bi bi-building me-2"></i>Assigned:</strong></p>
+                                                        <p class="text-muted">June 2018</p>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text mt-3">
+                                                    <strong><i class="bi bi-book me-2"></i>Education:</strong> 
+                                                    <span class="text-muted">MA in Social Justice, Ateneo de Manila University</span>
+                                                </p>
+                                                <p class="card-text">
+                                                    <strong><i class="bi bi-envelope me-2"></i>Contact:</strong> 
+                                                    <span class="text-muted">fr.anthony@sjnp.org</span>
+                                                </p>
+                                                <p class="card-text">
+                                                    <strong><i class="bi bi-heart me-2"></i>Specialty:</strong> 
+                                                    <span class="text-muted">Social Justice, Community Outreach, Counseling</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#priestsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#priestsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carousel Indicators -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <div class="carousel-indicators-custom">
+                    <button type="button" data-bs-target="#priestsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                        <span>Fr. John Martin</span>
+                    </button>
+                    <button type="button" data-bs-target="#priestsCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+                        <span>Fr. Michael Rodriguez</span>
+                    </button>
+                    <button type="button" data-bs-target="#priestsCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+                        <span>Fr. Anthony Santos</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Stream & Facebook Updates Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4" style="color: var(--primary-color);">
+                    <i class="bi bi-broadcast me-2"></i>Live Stream & Updates
+                </h2>
+                <p class="text-center mb-5">Join us for live celebrations and stay updated with parish activities.</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Facebook Live Stream - Left Side -->
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header text-white d-flex align-items-center" 
+                         style="background-color: var(--primary-color);">
+                        <i class="bi bi-camera-video me-2 fs-4"></i>
+                        <h5 class="mb-0">Facebook Live Mass</h5>
+                        <span class="badge ms-auto" id="liveStatusBadge" style="background-color: #d9534f;">LIVE</span>
+                    </div>
+                    
+                    <div class="card-body p-0">
+                        <!-- Facebook Embed Container -->
+                        <div class="ratio ratio-16x9">
+                            <iframe 
+                                id="facebookLiveStream"
+                                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSimbahanNgMalibay%2Flive&width=500&show_text=false&height=280" 
+                                title="San Juan Nepomuceno Parish Live Mass"
+                                style="border:none;overflow:hidden" 
+                                scrolling="no" 
+                                frameborder="0" 
+                                allowfullscreen="true" 
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        
+                        <!-- Dynamic Title Section -->
+                        <div class="p-3">
+                            <h6 class="text-primary" style="color: var(--primary-color) !important;" id="liveStreamTitle">
+                                <i class="bi bi-arrow-clockwise me-1"></i> Loading current stream...
+                            </h6>
+                            <p class="text-muted small mb-2">
+                                <i class="bi bi-calendar-event me-1"></i> <span id="streamSchedule">Checking schedule...</span>
+                            </p>
+                            <p class="text-muted small">
+                                <i class="bi bi-info-circle me-1"></i> <span id="streamStatus">Stream status: Loading...</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer bg-light">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="https://www.facebook.com/SimbahanNgMalibay/live" 
+                               target="_blank" 
+                               class="btn btn-sm text-white" 
+                               style="background-color: #1877F2; border-color: #1877F2;">
+                                <i class="bi bi-facebook me-1"></i> Watch on Facebook
+                            </a>
+                            <div class="text-end">
+                                <small class="text-muted d-block">
+                                    <i class="bi bi-eye me-1"></i> <span id="liveViewers">--</span> watching
+                                </small>
+                                <small class="text-muted" id="lastUpdated">Updated: Just now</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Facebook Updates - Right Side -->
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header text-white d-flex align-items-center" 
+                         style="background-color: var(--primary-color);">
+                        <i class="bi bi-facebook me-2 fs-4"></i>
+                        <h5 class="mb-0">Latest Facebook Updates</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <!-- Facebook Page Plugin -->
+                        <div class="facebook-feed-container" style="height: 380px; overflow: hidden;">
+                            <div class="fb-page" 
+                                 data-href="https://www.facebook.com/SimbahanNgMalibay" 
+                                 data-tabs="timeline" 
+                                 data-width="500" 
+                                 data-height="500" 
+                                 data-small-header="true" 
+                                 data-adapt-container-width="true" 
+                                 data-hide-cover="true" 
+                                 data-show-facepile="false">
+                                <blockquote cite="https://www.facebook.com/SimbahanNgMalibay" 
+                                            class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/SimbahanNgMalibay">
+                                        Simbahan ng Malibay - San Juan Nepomuceno Parish Church
+                                    </a>
+                                </blockquote>
+                            </div>
+                        </div>
+                        
+                        <!-- Alternative Facebook Posts -->
+                        <div class="facebook-posts-alternative p-3" style="display: none;">
+                            <div class="text-center mb-3">
+                                <a href="https://www.facebook.com/SimbahanNgMalibay" 
+                                   target="_blank" 
+                                   class="btn btn-primary btn-sm">
+                                    <i class="bi bi-facebook me-1"></i> View Full Facebook Page
+                                </a>
+                            </div>
+                            
+                            <div class="list-group list-group-flush">
+                                <a href="https://www.facebook.com/photo/?fbid=778698461332821&set=a.186906893845317" 
+                                   target="_blank" 
+                                   class="list-group-item list-group-item-action border-0 py-2">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-image text-primary"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-2">
+                                            <h6 class="mb-1">Latest Photos</h6>
+                                            <p class="small text-muted mb-1">View our latest parish activities and events</p>
+                                            <span class="badge bg-light text-primary small">Recent</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://www.facebook.com/SimbahanNgMalibay" 
+                                   target="_blank" 
+                                   class="list-group-item list-group-item-action border-0 py-2">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-megaphone text-primary"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-2">
+                                            <h6 class="mb-1">Parish Announcements</h6>
+                                            <p class="small text-muted mb-1">Important updates and announcements</p>
+                                            <span class="badge bg-light text-primary small">Updated</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://www.facebook.com/SimbahanNgMalibay" 
+                                   target="_blank" 
+                                   class="list-group-item list-group-item-action border-0 py-2">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-calendar-event text-primary"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-2">
+                                            <h6 class="mb-1">Upcoming Events</h6>
+                                            <p class="small text-muted mb-1">Check our upcoming Mass schedules and events</p>
+                                            <span class="badge bg-light text-primary small">Schedule</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light text-center">
+                        <a href="https://www.facebook.com/SimbahanNgMalibay" 
+                           target="_blank" 
+                           class="btn btn-primary btn-sm w-100">
+                            <i class="bi bi-facebook me-1"></i> Visit Our Facebook Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mass Schedule Section -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header text-white d-flex align-items-center" 
+                         style="background-color: var(--primary-color);">
+                        <i class="bi bi-calendar-week me-2 fs-4"></i>
+                        <h5 class="mb-0">Weekly Mass Schedule</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Sunday Schedule -->
+                            <div class="col-md-4 mb-3">
+                                <div class="schedule-day">
+                                    <h6 class="text-primary mb-3">
+                                        <i class="bi bi-sun me-2"></i>Araw ng Linggo
+                                    </h6>
+                                    <div class="schedule-language mb-3">
+                                        <strong>Filipino</strong>
+                                        <p class="mb-1">6:00am, 7:30am</p>
+                                        <p class="mb-0">4:00pm, 5:30pm</p>
+                                    </div>
+                                    <div class="schedule-language mb-3">
+                                        <strong>English</strong>
+                                        <p class="mb-1">9:00am, 7:00pm</p>
+                                    </div>
+                                    <div class="schedule-language">
+                                        <strong>HHC Chapel</strong>
+                                        <p class="mb-0">5:30pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Monday - Saturday -->
+                            <div class="col-md-4 mb-3">
+                                <div class="schedule-day">
+                                    <h6 class="text-primary mb-3">
+                                        <i class="bi bi-calendar me-2"></i>Lunes - Sabado
+                                    </h6>
+                                    <div class="schedule-language">
+                                        <strong>Filipino</strong>
+                                        <p class="mb-1">6:00am, 6:00pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Special Schedules -->
+                            <div class="col-md-4">
+                                <div class="schedule-day">
+                                    <h6 class="text-primary mb-3">
+                                        <i class="bi bi-star me-2"></i>Espesyal na Oras
+                                    </h6>
+                                    <div class="schedule-language mb-3">
+                                        <strong>Unang Biyernes ng Buwan</strong>
+                                        <p class="mb-1"><em>Banal na Oras at Kumpisalan:</em> 5:00pm</p>
+                                        <p class="mb-0"><em>Banal na Misa:</em> 6:00pm</p>
+                                    </div>
+                                    <div class="schedule-language">
+                                        <strong>Ika-16 ng Buwan (St. John Nepomuceno)</strong>
+                                        <p class="mb-1">Kumpisalan: 5:00pm</p>
+                                        <p class="mb-1">Banal na Misa: 6:00pm</p>
+                                        <p class="mb-1">Pagpapahid ng Langis: 5:45pm</p>
+                                        <p class="mb-0">Nobena: 7:00pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+
+        <!-- Footer Section - Simplified -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-4 col-md-6 mb-4" id="contact-section">
+                    <div class="footer-widget">
+                        <h5 class="text-white mb-4">
+                            <i class="bi bi-house-door me-2"></i>Parish Information
+                        </h5>
+                        <div class="contact-info">
+                            <p class="mb-3">
+                                <i class="bi bi-geo-alt-fill me-2"></i>
+                                San Juan Nepomuceno Parish<br>
+                                Malibay, Pasay City<br>
+                                Metro Manila, Philippines
+                            </p>
+                            <p class="mb-3">
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                (02) 8XXX-XXXX
+                            </p>
+                            <p class="mb-3">
+                                <i class="bi bi-envelope-fill me-2"></i>
+                                info@sjnp-malibay.org
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Location Map -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5 class="text-white mb-4">
+                            <i class="bi bi-geo-alt me-2"></i>Find Us
+                        </h5>
+                        <div class="location-map">
+                            <div class="map-container rounded" style="height: 200px; overflow: hidden;">
+                                <!-- Google Maps Embed -->
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d796.4246024895011!2d121.01034494376647!3d14.535975915016996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c94781dd8f33%3A0xa0023c7ac579f75d!2sSan%20Juan%20Nepomuceno%20Parish!5e0!3m2!1sen!2sph!4v1767336558357!5m2!1sen!2sph"
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Donation QR Code -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="footer-widget">
+                        <h5 class="text-white mb-4">
+                            <i class="bi bi-heart-fill me-2"></i>Support Our Parish
+                        </h5>
+                        <div class="donation-info">
+                            <!-- QR Code -->
+                            <div class="qr-code-container text-center p-3 mb-3">
+                                <div class="qr-placeholder bg-white p-2 rounded d-inline-block">
+                                    <!-- QR Code Placeholder -->
+                                    <div class="qr-code" style="width: 150px; height: 150px; background: #f8f9fa; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; margin: 0 auto;">
+                                        <div class="text-center">
+                                            <i class="bi bi-qr-code-scan text-dark fs-1"></i>
+                                            <p class="small text-dark mt-2 mb-0">Scan to Donate</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Donation Button -->
+                            <div class="text-center">
+                                <small class="text-white-50">
+                                    Your support helps our parish ministries
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Media & Copyright -->
+            <div class="row pt-4 border-top border-secondary">
+                <!-- Social Media -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="social-media">
+                        <h6 class="text-white mb-3">Follow Us:</h6>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/SimbahanNgMalibay" 
+                               target="_blank" 
+                               class="btn btn-outline-light btn-sm me-2 mb-2">
+                                <i class="bi bi-facebook me-1"></i> Facebook
+                            </a>
+                            <a href="https://www.youtube.com/@simbahanngmalibay" 
+                               target="_blank" 
+                               class="btn btn-outline-light btn-sm me-2 mb-2">
+                                <i class="bi bi-youtube me-1"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="col-md-6">
+                    <div class="text-md-end">
+                        <p class="text-white-50 small mb-2">
+                            <i class="bi bi-c-circle me-1"></i> 2026 San Juan Nepomuceno Parish
+                        </p>
+                        <p class="text-white-50 small mb-0">
+                            A community of faith serving Malibay
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0">
+    </script>
+
+    <script>
+        // Auto-slide functionality for carousels
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ministries Carousel
+            const ministriesCarousel = document.getElementById('ministriesCarousel');
+            if (ministriesCarousel) {
+                const carousel = new bootstrap.Carousel(ministriesCarousel, {
+                    interval: 5000,
+                    wrap: true,
+                    pause: 'hover'
+                });
+            }
+
+            // Priests Carousel
+            const priestsCarousel = document.getElementById('priestsCarousel');
+            if (priestsCarousel) {
+                const carousel = new bootstrap.Carousel(priestsCarousel, {
+                    interval: 8000,
+                    wrap: true,
+                    pause: 'hover'
+                });
+                
+                // Add click events to custom indicators
+                document.querySelectorAll('.carousel-indicators-custom button').forEach((button, index) => {
+                    button.addEventListener('click', function() {
+                        carousel.to(index);
+                    });
+                });
+            }
+
+            // Live Stream Dynamic Updates
+            updateLiveStreamInfo();
+            setInterval(updateLiveStreamInfo, 60000); // Update every minute
+
+            // Check Facebook plugin
+            setTimeout(() => {
+                const fbPlugin = document.querySelector('.fb-page');
+                const fallback = document.querySelector('.facebook-posts-alternative');
+                
+                if (!fbPlugin || !fbPlugin.innerHTML.trim()) {
+                    if (fallback) {
+                        fallback.style.display = 'block';
+                        const feedContainer = document.querySelector('.facebook-feed-container');
+                        if (feedContainer) {
+                            feedContainer.style.display = 'none';
+                        }
+                    }
+                }
+            }, 5000);
+        });
+
+        function updateLiveStreamInfo() {
+            const now = new Date();
+            const day = now.getDay();
+            const hour = now.getHours();
+            const minute = now.getMinutes();
+            
+            const liveTitleElement = document.getElementById('liveStreamTitle');
+            const scheduleElement = document.getElementById('streamSchedule');
+            const statusElement = document.getElementById('streamStatus');
+            const badgeElement = document.getElementById('liveStatusBadge');
+            const viewersElement = document.getElementById('liveViewers');
+            const updatedElement = document.getElementById('lastUpdated');
+            
+            let title = "Currently: Recorded Mass";
+            let schedule = "Check schedule for upcoming Masses";
+            let status = "Viewing previous celebration";
+            let isLive = false;
+            let viewers = 0;
+            
+            // Define Mass times
+            const massTimes = {
+                0: [ // Sunday
+                    {time: "06:00", title: "Sunday 6:00 AM Mass (Filipino)"},
+                    {time: "07:30", title: "Sunday 7:30 AM Mass (Filipino)"},
+                    {time: "09:00", title: "Sunday 9:00 AM Mass (English)"},
+                    {time: "16:00", title: "Sunday 4:00 PM Mass (Filipino)"},
+                    {time: "17:30", title: "Sunday 5:30 PM Mass (Filipino)"},
+                    {time: "19:00", title: "Sunday 7:00 PM Mass (English)"}
+                ],
+                6: [ // Saturday
+                    {time: "06:00", title: "Saturday 6:00 AM Mass"},
+                    {time: "18:00", title: "Saturday 6:00 PM Mass"}
+                ]
+            };
+            
+            // Weekdays (1-5)
+            for (let i = 1; i <= 5; i++) {
+                massTimes[i] = [
+                    {time: "06:00", title: "Daily 6:00 AM Mass"},
+                    {time: "18:00", title: "Daily 6:00 PM Mass"}
+                ];
+            }
+            
+            // Check current schedule
+            if (massTimes[day]) {
+                const currentTime = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+                
+                for (const mass of massTimes[day]) {
+                    const [massHour, massMinute] = mass.time.split(':').map(Number);
+                    const timeDiff = (hour * 60 + minute) - (massHour * 60 + massMinute);
+                    
+                    if (timeDiff >= 0 && timeDiff <= 90) { // Within 1.5 hours of Mass
+                        title = mass.title;
+                        schedule = "Now ongoing";
+                        status = "Live celebration in progress";
+                        isLive = true;
+                        viewers = 50 + Math.floor(Math.random() * 200);
+                        break;
+                    }
+                }
+                
+                // If not currently live, show next Mass
+                if (!isLive) {
+                    for (const mass of massTimes[day]) {
+                        const [massHour, massMinute] = mass.time.split(':').map(Number);
+                        if (massHour > hour || (massHour === hour && massMinute > minute)) {
+                            schedule = `Next: Today at ${mass.time}`;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            // Update display
+            liveTitleElement.innerHTML = `<i class="bi ${isLive ? 'bi-broadcast' : 'bi-play-circle'} me-1"></i> ${title}`;
+            scheduleElement.textContent = schedule;
+            statusElement.textContent = status;
+            
+            if (isLive) {
+                badgeElement.textContent = "LIVE NOW";
+                badgeElement.style.backgroundColor = "#d9534f";
+                viewersElement.textContent = viewers + "+";
+            } else {
+                badgeElement.textContent = "REPLAY";
+                badgeElement.style.backgroundColor = "#6c757d";
+                viewersElement.textContent = "--";
+            }
+            
+            updatedElement.textContent = `Updated: ${now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
+        }
+        // Advanced parallax with multiple layers and zoom
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.video-background');
+    const overlay = document.querySelector('.gradient-overlay');
+    const content = document.querySelector('.hero-content');
+    
+    if (!video) return;
+    
+    // Performance optimization
+    video.style.transform = 'translateZ(0)';
+    video.style.backfaceVisibility = 'hidden';
+    
+    let lastScrollY = 0;
+    let ticking = false;
+    
+    function updateParallax() {
+        const currentScrollY = window.pageYOffset;
+        const scrollDelta = currentScrollY - lastScrollY;
+        
+        // Apply parallax effect
+        const parallaxFactor = 0.5;
+        const currentY = parseFloat(video.style.transform.replace(/[^\d.-]/g, '')) || 0;
+        const newY = currentY + (scrollDelta * parallaxFactor);
+        
+        // Apply transform
+        video.style.transform = `translateY(${newY}px) scale(${1 + currentScrollY * 0.0005})`;
+        
+        // Different speed for overlay
+        if (overlay) {
+            const overlayY = currentScrollY * 0.3;
+            overlay.style.transform = `translateY(${overlayY}px)`;
+            
+            // Adjust overlay opacity on scroll
+            const opacity = 0.8 - Math.min(currentScrollY * 0.001, 0.3);
+            overlay.style.opacity = opacity;
+        }
+        
+        lastScrollY = currentScrollY;
+    }
+    
+    // Smooth scroll handling
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                updateParallax();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+    
+    // Handle resize
+    window.addEventListener('resize', updateParallax);
+});
+    </script>
+</body>
+</html>

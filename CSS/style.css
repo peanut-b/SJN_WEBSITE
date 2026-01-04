@@ -1,0 +1,476 @@
+:root {
+    --primary-color: #5A0E24;
+    --secondary-color: #8a6d3b;
+    --accent-color: #cdaa5e;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.parish-logo {
+    height: 50px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(48, 48, 48, 0.85) !important;
+    background-color: #FCF5EE;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: rgba(48, 48, 48, 0.85) !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.offcanvas-header {
+    background-color: #5A0E24;
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.offcanvas-body {
+    background-color: #FCF5EE;
+}
+
+.dropdown-menu {
+    background-color: #5A0E24;
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    color: white;
+    padding: 100px 0;
+    text-align: right;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 80vh;
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+    
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, 
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(0, 0, 0, 0.3) 50%, 
+        rgba(0, 0, 0, 0.6) 100%
+    );
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ministries Carousel */
+#ministriesCarousel {
+    padding: 20px 0;
+}
+
+#ministriesCarousel .carousel-item {
+    padding: 10px;
+}
+
+#ministriesCarousel .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#ministriesCarousel .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+#ministriesCarousel .carousel-control-prev,
+#ministriesCarousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+#ministriesCarousel .carousel-control-prev {
+    left: -25px;
+}
+
+#ministriesCarousel .carousel-control-next {
+    right: -25px;
+}
+
+#ministriesCarousel .carousel-control-prev:hover,
+#ministriesCarousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+#ministriesCarousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    border: none;
+}
+
+#ministriesCarousel .carousel-indicators button.active {
+    background-color: var(--primary-color);
+}
+
+/* Priests Carousel */
+#priestsCarousel {
+    padding: 20px 0;
+}
+
+#priestsCarousel .card {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#priestsCarousel .card:hover {
+    transform: translateY(-5px);
+}
+
+#priestsCarousel .img-fluid.rounded-start {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    min-height: 350px;
+}
+
+#priestsCarousel .carousel-control-prev,
+#priestsCarousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+    margin: 0 20px;
+}
+
+#priestsCarousel .carousel-control-prev {
+    left: 0;
+}
+
+#priestsCarousel .carousel-control-next {
+    right: 0;
+}
+
+#priestsCarousel .carousel-control-prev:hover,
+#priestsCarousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Custom Indicators */
+.carousel-indicators-custom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.carousel-indicators-custom button {
+    background: none;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-indicators-custom button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.carousel-indicators-custom button:hover:not(.active) {
+    background-color: #e0e0e0;
+}
+
+.carousel-indicators-custom button span {
+    pointer-events: none;
+}
+
+/* Live Stream & Facebook Updates */
+.facebook-feed-container {
+    min-height: 380px;
+    overflow: hidden;
+}
+
+.facebook-posts-alternative .list-group-item {
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.facebook-posts-alternative .list-group-item:hover {
+    background-color: rgba(90, 14, 36, 0.05);
+    border-left-color: var(--primary-color);
+    padding-left: calc(1rem - 3px);
+}
+
+/* Mass Schedule */
+.schedule-day {
+    padding: 15px;
+    background: rgba(90, 14, 36, 0.05);
+    border-radius: 8px;
+    height: 100%;
+}
+
+.schedule-language {
+    margin-bottom: 15px;
+}
+
+.schedule-language:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-language strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.schedule-language p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.schedule-language em {
+    color: #888;
+    font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+        min-height: 80vh;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    #ministriesCarousel .carousel-control-prev {
+        left: -15px;
+    }
+    
+    #ministriesCarousel .carousel-control-next {
+        right: -15px;
+    }
+    
+    #ministriesCarousel .card {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+    
+    #priestsCarousel .card {
+        max-width: 100% !important;
+    }
+    
+    #priestsCarousel .row.g-0 {
+        flex-direction: column;
+    }
+    
+    #priestsCarousel .col-md-4 {
+        width: 100%;
+        height: 300px;
+    }
+    
+    #priestsCarousel .img-fluid.rounded-start {
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        border-bottom-left-radius: 0 !important;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-indicators-custom {
+        flex-wrap: wrap;
+    }
+    
+    .carousel-indicators-custom button {
+        margin-bottom: 5px;
+    }
+    
+    #priestsCarousel .carousel-control-prev,
+    #priestsCarousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+    
+    .schedule-day {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    #priestsCarousel .card {
+        max-width: 90% !important;
+    }
+    
+    .facebook-feed-container {
+        min-height: 350px;
+    }
+}
+
+/* Additional Utilities */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+    background-color: #4a0c1f !important;
+    border-color: #4a0c1f !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Auto-slide intervals */
+#ministriesCarousel {
+    --carousel-speed: 5000ms;
+}
+
+#ministriesCarousel.carousel {
+    transition-duration: var(--carousel-speed);
+}
+
+#priestsCarousel.carousel {
+    transition-duration: 1000ms;
+}
+
+/* Add to existing style.css */
+
+/* Footer Styles - Simplified */
+.footer {
+    background-color: #2c0a18 !important;
+    margin-top: 60px;
+}
+
+.footer-widget {
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    height: 100%;
+}
+
+.contact-info p {
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: #cdaa5e;
+    width: 20px;
+}
+
+.map-container {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.qr-code-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.social-icons .btn {
+    transition: all 0.3s ease;
+}
+
+.social-icons .btn:hover {
+    background-color: var;
+    border-color: #cdaa5e;
+    color: #cdaa5e;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    .footer-widget {
+        margin-bottom: 20px;
+    }
+    
+    .social-media {
+        margin-bottom: 20px;
+    }
+    
+    .map-container {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .qr-code {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+    .social-icons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
